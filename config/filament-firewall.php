@@ -1,7 +1,7 @@
 <?php
 
-use SolutionForest\FilamentFirewall\Filament\Resources\FirewallIpResource;
-use SolutionForest\FilamentFirewall\Models\Ip;
+use Afsdarif\FilamentFirewall\Filament\Resources\FirewallIpResource;
+use Afsdarif\FilamentFirewall\Models\Ip;
 
 return [
     'models' => [

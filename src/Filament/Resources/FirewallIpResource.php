@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentFirewall\Filament\Resources;
+namespace Afsdarif\FilamentFirewall\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -12,11 +12,14 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
-use SolutionForest\FilamentFirewall\Filament\Resources\FirewallIpResource\Pages;
+use Afsdarif\FilamentFirewall\Filament\Resources\FirewallIpResource\Pages;
+use Filament\Schemas\Schema;
+use BackedEnum;
+use Illuminate\Contracts\Support\Htmlable;
 
 class FirewallIpResource extends Resource
 {
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
         return $form
             ->schema([
@@ -102,10 +105,10 @@ class FirewallIpResource extends Resource
 
     public static function getModel(): string
     {
-        return config('filament-firewall.models.ip', \SolutionForest\FilamentFirewall\Models\Ip::class);
+        return config('filament-firewall.models.ip', \Afsdarif\FilamentFirewall\Models\Ip::class);
     }
 
-    public static function getNavigationIcon(): ?string
+    public static function getNavigationIcon(): string | BackedEnum | Htmlable | null
     {
         return 'heroicon-o-shield-check';
     }

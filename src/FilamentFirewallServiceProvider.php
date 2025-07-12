@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentFirewall;
+namespace Afsdarif\FilamentFirewall;
 
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
