@@ -28,7 +28,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/afsdarif/filament-firewall"
+            "url": "https://github.com/AFSDARIF/filament-firewall"
         }
     ],
     "require-dev": {
