@@ -1,10 +1,10 @@
 <?php
 
-namespace SolutionForest\FilamentFirewall\Middleware;
+namespace Afsdarif\FilamentFirewall\Middleware;
 
 use Illuminate\Database\QueryException;
 use Akaunting\Firewall\Abstracts\Middleware as BaseMiddleware;
-use SolutionForest\FilamentFirewall\Facades\FilamentFirewall;
+use Afsdarif\FilamentFirewall\Facades\FilamentFirewall;
 use Symfony\Component\HttpFoundation\IpUtils;
 
 /**

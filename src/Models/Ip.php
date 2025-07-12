@@ -1,6 +1,6 @@
 <?php 
 
-namespace SolutionForest\FilamentFirewall\Models;
+namespace Afsdarif\FilamentFirewall\Models;
 
 class Ip extends \Akaunting\Firewall\Models\Ip
 {

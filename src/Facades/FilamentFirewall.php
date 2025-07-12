@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentFirewall\Facades;
+namespace Afsdarif\FilamentFirewall\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Collection;
@@ -12,12 +12,12 @@ use Illuminate\Support\Collection;
  * @method static bool withinBlackList($ip)
  * @method static string getFirewallIpModel()
  * 
- * @see \SolutionForest\FilamentFirewall\FilamentFirewall
+ * @see \Afsdarif\FilamentFirewall\FilamentFirewall
  */
 class FilamentFirewall extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \SolutionForest\FilamentFirewall\FilamentFirewall::class;
+        return \Afsdarif\FilamentFirewall\FilamentFirewall::class;
     }
 }

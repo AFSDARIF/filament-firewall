@@ -1,12 +1,13 @@
 {
-    "name": "solution-forest/filament-firewall",
+    "name": "afsdarif/filament-firewall",
     "description": "This is a middleware for whitelisting/blacklisting for Filament Admin",
     "keywords": [
         "Solution Forest",
         "laravel",
-        "filament-firewall"
+        "filament-firewall",
+        "afsdarif"
     ],
-    "homepage": "https://github.com/solution-forest/filament-firewall",
+    "homepage": "https://github.com/afsdarif/filament-firewall",
     "support": {
         "issues": "https://github.com/solution-forest/filament-firewall/issues",
         "source": "https://github.com/solution-forest/filament-firewall"
@@ -17,12 +18,18 @@
         "email": "info@solutionforest.net",
         "role": "Developer"
     }],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/afsdarif/filament-firewall"
+        }
+    ],
     "require": {
-        "php": "^8.0",
-        "akaunting/laravel-firewall": "^2.2",
-        "filament/filament": "^3.0",
-        "filament/support": "^3.0",
-        "spatie/laravel-package-tools": "^1.15.0"
+        "php": "^8.2",
+        "akaunting/laravel-firewall": "^2.3.0",
+        "filament/filament": "^4.0",
+        "filament/support": "^4.0",
+        "spatie/laravel-package-tools": "^1.92.4"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -39,9 +46,9 @@
     },
     "autoload": {
         "psr-4": {
-            "SolutionForest\\FilamentFirewall\\": "src",
-            "SolutionForest\\FilamentFirewall\\Database\\Factories\\": "database/factories",
-            "SolutionForest\\FilamentFirewall\\Database\\Seeders\\": "database/seeders"
+            "AfSdarif\\FilamentFirewall\\": "src",
+            "AfSdarif\\FilamentFirewall\\Database\\Factories\\": "database/factories",
+            "AfSdarif\\FilamentFirewall\\Database\\Seeders\\": "database/seeders"
         }
     },
     "autoload-dev": {
@@ -50,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SolutionForest\\FilamentFirewall\\FilamentFirewallServiceProvider"
+                "AfSdarif\\FilamentFirewall\\FilamentFirewallServiceProvider"
             ],
             "aliases": {
-                "FilamentFirewall": "SolutionForest\\FilamentFirewall\\Facades\\FilamentFirewall"
+                "FilamentFirewall": "AfSdarif\\FilamentFirewall\\Facades\\FilamentFirewall"
             }
         }
     },

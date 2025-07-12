@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentFirewall;
+namespace Afsdarif\FilamentFirewall;
 
 use Illuminate\Support\Collection;
 
@@ -46,6 +46,6 @@ class FilamentFirewall
 
     public function getFirewallIpModel(): string
     {
-        return config('filament-firewall.models.ip', \SolutionForest\FilamentFirewall\Models\Ip::class);
+        return config('filament-firewall.models.ip', \Afsdarif\FilamentFirewall\Models\Ip::class);
     }
 }

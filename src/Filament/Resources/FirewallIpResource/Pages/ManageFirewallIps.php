@@ -1,6 +1,6 @@
 <?php
 
-namespace SolutionForest\FilamentFirewall\Filament\Resources\FirewallIpResource\Pages;
+namespace Afsdarif\FilamentFirewall\Filament\Resources\FirewallIpResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
@@ -8,8 +8,8 @@ use Filament\Facades\Filament;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ManageRecords;
 use Illuminate\Support\Facades\Request;
-use SolutionForest\FilamentFirewall\Facades\FilamentFirewall;
-use SolutionForest\FilamentFirewall\Filament\Resources\FirewallIpResource;
+use Afsdarif\FilamentFirewall\Facades\FilamentFirewall;
+use Afsdarif\FilamentFirewall\Filament\Resources\FirewallIpResource;
 
 class ManageFirewallIps extends ManageRecords
 {
