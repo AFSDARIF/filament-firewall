@@ -22,14 +22,14 @@ class FirewallIpResource extends Resource
 {
     public static function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->schema([
                 Forms\Components\TextInput::make('ip')
                     ->label(__('filament-firewall::filament-firewall.form.field.ip'))
                     ->default(fn () => Request::getClientIp())
                     ->regex('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\z/')
                     ->validationAttribute(Str::upper(__('filament-firewall::filament-firewall.form.field.ip')))
-                    ->suffixAction(Forms\Components\Actions\Action::make('fillMyIp')
+                    ->suffixAction(Actions\Action::make('fillMyIp')
                         ->label(__('filament-firewall::filament-firewall.action.fillMyIp'))
                         ->icon('heroicon-o-pencil')
                         ->action(fn (Set $set) => $set('ip', Request::getClientIp()))
